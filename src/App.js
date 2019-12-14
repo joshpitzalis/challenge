@@ -90,33 +90,29 @@ function App() {
 
       <section class="blue pa4">
         <blockquote class="ph1 f6 f2-ns measure center">
-          <p class="fw4 lh-copy lh-title-ns measure center">
-            The Client Tree Program is for anyone who's been struggling with
-            starting as a freelancer. We'll help you build and maintain your own
-            list of well-paying clients and take control of your professional
-            freelancing career in just 1 month.
-          </p>
+          The Client Tree Program is for anyone who's been struggling with
+          starting as a freelancer. We'll help you build and maintain your own
+          list of well-paying clients and take control of your professional
+          freelancing career in just 1 month.
         </blockquote>
         <p class="f6 f4-ns lh-copy measure center">
           Have you been tryting to shift from a full time role to freelancing
           for a while ? Have you bought multiple books but none have helped in
-          getting the ball rolling
+          getting the ball rolling ?
           <p class="f6 f4-ns lh-copy measure center">
-            Keeping the known unknowns aside, there's a lot of things you don't
-            know you'll face, like drafting how to draft killer proposals,
-            onboarding and offboarding of clients, getting testimonials,
-            marketing your services, and the list goes on.
+            You're also uncertain about a lot of things how to draft killer
+            proposals, onboarding and offboarding of clients, getting
+            testimonials, marketing your services, and the list goes on.
           </p>
           <p class="f6 f4-ns lh-copy measure center">
             {' '}
-            Without the understanding these nuances, you're mostly going to
-            suffer whenever you try
+            Without the understanding these things, you're mostly going to make
+            a lot mistakes
           </p>
           <p class="f6 f4-ns lh-copy measure center">
             {' '}
-            Our program is thoughtfully designed so that you don't make the same
-            mistakes as others and you avoid the common mistakes most
-            freelancers make
+            Our program is thoughtfully designed so that you avoid the common
+            mistakes most freelancers make
           </p>
           <p class="f6 f4-ns lh-copy measure center">
             To make the experience as seamless as possible, we've built a
