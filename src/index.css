@@ -1,40 +1,37 @@
-:root{
-  --blue: #161a3a;
-  --yellow: #f8eb7f;
-  --red:#dd3f19;
+:root {
+	--blue: #303d70;
+	--yellow: #f8eb7f;
+	--red: #dd3f19;
+	color: #303d70;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .bg-blue {
-  background-color: var(--blue);
+	background-color: var(--blue);
 }
 
 .bg-red {
-  background-color: var(--red);
+	background-color: var(--red);
 }
 .bg-yellow {
-  background-color: var(--yellow);
+	background-color: var(--yellow);
 }
 
 .yellow {
-  color: var(--yellow);
+	color: var(--yellow);
 }
 .blue {
-  color: var(--blue);
+	color: var(--blue);
 }
 @media screen and (min-width: 48em) {
-#slantLeft{
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 12% 100%);
+	#slantLeft {
+		clip-path: polygon(0 0, 100% 0%, 100% 100%, 12% 100%);
+	}
 }
-}
-
-
-
