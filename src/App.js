@@ -3,8 +3,9 @@ import fish from './images/freelance-fish-logo.png';
 import peeps from './images/teamwork_white_2.png';
 import peeps4 from './images/teamwork_white_4.png';
 import peeps5 from './images/teamwork_white_5.png';
-
+import Form, { handleSubmit } from './Form';
 import clientTree from './images/clientTree.png';
+
 function App() {
   return (
     <main>
@@ -60,15 +61,15 @@ function App() {
           <div id="slantLeft" className="bg-blue pa3 pv4">
             <div className="measure center tl pl4-ns">
               <h1 className="f2  lh-title fw9 ">
-                Find clients that pay well in 30 days. Get your freelance
-                business started.
+                Get your freelance business started by finding clients that pay
+                well in 30 days.
               </h1>
 
               <h2 className="f4 fw6  lh-title ">
-                We help people who want to start freelancing with a program that
-                is designed to help them take action. We do it through a 4 week
-                program with weekly 1 on 1's and a custom app to keep track of
-                progress
+                We help people who want to start freelancing with a 4 week
+                program that is designed to help them take action. I addition to
+                that, we have weekly 1 on 1's and we've built a custom app to
+                aid with progress
               </h2>
 
               <a
@@ -90,39 +91,46 @@ function App() {
       <section class="blue pa4">
         <blockquote class="ph1 f6 f2-ns measure center">
           <p class="fw4 lh-copy lh-title-ns measure center">
-            Finding clients as a freelancer doesn't have to be hard
+            The Client Tree Program is for anyone who's been struggling with
+            starting as a freelancer. We'll help you build and maintain your own
+            list of well-paying clients and take control of your professional
+            freelancing career in just 1 month.
           </p>
         </blockquote>
         <p class="f6 f4-ns lh-copy measure center">
-          If you're like most others, you most likely have no clue on how
-          freelancers find clients, take a client from lead to testimonial and
-          how to position yourself in the market. Most freelancers get attracted
-          to freelancing because of the freedom. But most freelancers are
-          unaware that freelancing is like running a business.
+          Have you been tryting to shift from a full time role to freelancing
+          for a while ? Have you bought multiple books but none have helped in
+          getting the ball rolling
           <p class="f6 f4-ns lh-copy measure center">
-            Just like any business you are selling a product. A product ? Yes,
-            your service is your product, and to sell that service you'll have
-            to do some basic marketing. Most freelancers forget this. This leads
-            to gig sites where they end up getting paid bad prices.
+            Keeping the known unknowns aside, there's a lot of things you don't
+            know you'll face, like drafting how to draft killer proposals,
+            onboarding and offboarding of clients, getting testimonials,
+            marketing your services, and the list goes on.
           </p>
-          <p class="f6 f4-ns lh-copy measure center"></p>
-          <p class="f6 f4-ns lh-copy measure center"> </p>
           <p class="f6 f4-ns lh-copy measure center">
             {' '}
-            Most freelancers end up going through the feast famine cycle for
-            years, avoid the same mistakes and start running your business like
-            a pro{' '}
+            Without the understanding these nuances, you're mostly going to
+            suffer whenever you try
+          </p>
+          <p class="f6 f4-ns lh-copy measure center">
+            {' '}
+            Our program is thoughtfully designed so that you don't make the same
+            mistakes as others and you avoid the common mistakes most
+            freelancers make
+          </p>
+          <p class="f6 f4-ns lh-copy measure center">
+            To make the experience as seamless as possible, we've built a
+            software that'll help you track progress and keep you accountable.
           </p>
         </p>
       </section>
 
       <section class="measure-wide db center f5 f4-ns lh-copy tc">
-        <img class="db w-100 mt4" src={clientTree} alt="Client Tree Platform" />
         <a
           className=" tc link dim br-pill ph4 pv3 mb2 dib white bg-red b mt5"
           href="#0"
         >
-          Sign up for the challenge Today!
+          Sign up for the program today!
         </a>
       </section>
 
@@ -138,15 +146,13 @@ function App() {
             </b>
           </li>
           <li class="fw2 f4 lh-copy mt0 mb3">
-            <b>
-              Reach out to potential clients and find leads that will benefit
-              from what you do.
-            </b>
+            <b></b>
           </li>
           <li class="fw2 f4 lh-copy mt0 mb3">
             <b>
-              Reach out to professional network and help them in a meaningful
-              way
+              Reach out to professional network and potential clients, help them
+              in a meaningful way, and dfind leads that will benefit from what
+              you do.
             </b>
           </li>
           <li class="fw2 f4 lh-copy mt0 mb3">
@@ -166,20 +172,21 @@ function App() {
 
       <section>
         <blockquote class="ph0 f4 f1-ns measure-narrow center">
-          <p class="fw9 lh-copy lh-title-ns tc">
-            This challenge is more than just another high-level, content-only
+          <p class="fw6 lh-copy lh-title-ns tc">
+            This program is more than just another high-level, content-only
             course.
           </p>
-          <p class="fw9 lh-copy lh-title-ns tc">
+          <p class="fw6 lh-copy lh-title-ns tc">
             It’s a personalised program where you get one on one mentorship,
-            with high quality content and an app.
+            with high quality content and custom built app to track and aid your
+            progress.
           </p>
         </blockquote>
         <div className="w-100 w-50-ns pa4 db dib-ns">
           <img
-            src={peeps4}
-            className="dib w-100 h-auto pt4"
-            alt="peeps working together"
+            class="db w-100 mt4"
+            src={clientTree}
+            alt="Client Tree Platform"
           />
         </div>
         <div className="w-100 w-50-ns blue db dib-ns">
@@ -190,11 +197,11 @@ function App() {
               businesses.
             </p>
             <p className="fw4 f4 lh-copy mt0 mb3">
-              The software helps you through the learning experience more
-              seamlessly, this will not only help you stay on top of things but
-              also help you get a services page setup. We’ll make sure you stay
-              accountable by having weekly checkins and making sure there’s real
-              progress towards landing your first client.
+              The software helps you through the learning experience seamlessly.
+              It will not only help you stay on top of things but also help you
+              get a services page setup. We’ll make sure you stay accountable by
+              having weekly checkins and making sure there’s real progress
+              towards landing your first client.
             </p>
           </div>
         </div>
@@ -210,15 +217,11 @@ function App() {
           </li>
           <li class="fw2 f4 lh-copy mt0 mb3">
             <b>
-              Reach out to potential clients and find leads that will benefit
-              from what you do.
+              Have a professional network that you can reach out to frequently
             </b>
           </li>
           <li class="fw2 f4 lh-copy mt0 mb3">
-            <b>
-              Learn how to take people who are interested in working with you
-              and turn them into paying clients.
-            </b>
+            <b>Convert a lead into a client</b>
           </li>
           <li class="fw2 f4 lh-copy mt0 mb3">
             <b>
@@ -257,13 +260,11 @@ function App() {
                   Put together a service offering
                 </h1>
                 <p class="f6 f5-l lh-copy">
-                  First you’ll need more clarity on what you do so that your
-                  prospects know how you can add value to them. When a potential
-                  client lands on your page, he cares about how you can help
-                  him. Most people think showcasing their portfolio helps their
-                  potential clients understand this, but this is simply not
-                  true. Our help will help you stitch together a services page
-                  quickly.
+                  When a potential client lands on your page, he cares about how
+                  you can help him. First we'll help you get more clarity on how
+                  to specialise with the domain knowledge you currently have and
+                  then we'll help you stitch together a services page that helps
+                  a potential client understand how you can help them.
                 </p>
               </div>
             </div>
@@ -347,15 +348,16 @@ function App() {
             </p>
             <ul className="fw4 f4 lh-copy mt0 mb3">
               <li>
-                Have just started freelancing and want to get the ball rolling
-                quicker
+                Have just started freelancing, realise that there is a lot that
+                you have to learn and want to get the ball rolling quicker
               </li>
               <li>
                 A designer/developer with a lot of experience who wants more
-                freedom but has no clue on how to get started
+                freedom who has been on the fence for a while but has no clue on
+                how to get started with professional freelancing
               </li>
               <li>
-                Have tried freelancing as a side gig and wants help finding your
+                Have tried freelancing as a side gig and want help finding your
                 first client and making the transition to professional
                 freelancing full-time.
               </li>
@@ -405,10 +407,7 @@ function App() {
           <p class="fw9 lh-copy lh-title-ns tc">Pricing</p>
         </blockquote>
 
-        <h4 class="f3 fw1 georgia i mb5 measure-wide center">
-          If you don’t land a new client within 30 days of the course ending, we
-          will give you 100% of your money back.
-        </h4>
+        <h4 class="f3 fw1 georgia i mb5 measure-wide center"></h4>
 
         <div className="w-100 w-50-ns  db dib-ns">
           <article class="mw6 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
@@ -433,7 +432,7 @@ function App() {
               </li>
 
               <li class="lh-copy measure center f6 black-70">
-                Ready-To-Go Templates and Documents (Valued at $5,000){' '}
+                Ready-To-Go Templates and Documents
               </li>
             </ul>
             <div className="w-100 tc">
@@ -496,11 +495,12 @@ function App() {
           <div className="w-75-ns tc white pa5-ns pa3 center">
             <blockquote class="athelas ml0 mt0 pl4 black-90 bw2 white ">
               <p class="f5 f4-m f3-l lh-copy measure mt0">
-                The Client Tree Program is the ultimate training system for
-                anyone who wants to learn how to build and maintain their own
-                list of well-paying clients and take control of their
-                freelancing Career in just 1 month.
+                If you don’t land a new client within 30 days of the course
+                ending, we will give you 100% of your money back.
               </p>
+              <div>
+                <Form />
+              </div>
               <cite class="f6 ttu tracked fs-normal"></cite>
             </blockquote>
           </div>
