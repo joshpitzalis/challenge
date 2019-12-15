@@ -9,7 +9,8 @@ import peeps7 from './images/teamwork_white_7.png';
 import peeps12 from './images/teamwork_white_12.png';
 import peeps15 from './images/teamwork_white_15.png';
 import peeps14 from './images/teamwork_white_14.png';
-import Checkout from './checkout.js';
+import Checkout1 from './checkout1.js';
+import Checkout2 from './checkout2.js';
 
 function App() {
   return (
@@ -62,7 +63,7 @@ function App() {
             them about what you do and how it can help them.
           </li>
           <li class="fw4 f4 lh-copy mt0 mb3">
-            <b>Sell your services </b> by learn how to take people who are
+            <b>Sell your services </b> by learning how to take people who are
             interested in working with you and turning them into paying clients.
           </li>
           <li class="fw4 f4 lh-copy mt0 mb3">
@@ -75,8 +76,7 @@ function App() {
 
       <section>
         <blockquote class="ph0 f4 f1-ns measure-narrow center fw9 lh-copy lh-title-ns tc">
-          We even built a our own custom platform to help you track your
-          progress.
+          We even built our own custom platform to help you track your progress.
         </blockquote>
         <div className="w-100 w-50-ns pa4 db dib-ns">
           <img
@@ -123,14 +123,14 @@ function App() {
             and who you do it for.
           </li>
           <li class="fw4 f4 lh-copy mt0 mb3">
-            <b>A professional network</b> that you stay in touch with a regular
+            <b>A professional network</b> that you stay in touch with at regular
             intervals for word-of-mouth referrals.
           </li>
           <li class="fw4 f4 lh-copy mt0 mb3">
-            <b>An sales funnel</b> to help you convert a lead into a client.
+            <b>A sales funnel</b> to help you convert a lead into a client.
           </li>
           <li class="fw4 f4 lh-copy mt0 mb3">
-            <b>A framework </b> to continuously imporve as you grow your
+            <b>A framework </b> to continuously improve as you grow your
             freelancing business.
           </li>
         </ul>
@@ -159,10 +159,10 @@ function App() {
               <div class="w-100 w-60-ns pl3-ns">
                 <h1 class="f3 b  mt0 lh-title">Week 1: What you offer</h1>
                 <p class="f6 f5-l lh-copy">
-                  We help you think clearly about on how to specialise with the
-                  domain knowledge you currently have and then we'll help you
-                  put a website together to help potential clients understand
-                  how you can help them.
+                  We help you think clearly on how to specialise with the domain
+                  knowledge you currently have and then we'll help you put a
+                  website together to help potential clients understand how you
+                  can help them.
                 </p>
               </div>
             </div>
@@ -171,15 +171,15 @@ function App() {
               <div class="w-100 w-60-ns pl3-ns">
                 <h1 class="f3 b  mt0 lh-title">Week 2: Who you serve</h1>
                 <p class="f6 f5-l lh-copy">
-                  Once you know what you offer and who it will benefit, teh next
-                  stap is to start reach out to people who will benefit from
-                  your service. This combines reaching out to people directly
-                  aswell as following up with your existing professional
-                  network. Most people already have a professional network that
-                  they can tap onto: your old colleagues, friends who work in
-                  similar industries, acquantainces that you;ve never followed
-                  up with. This week is about understanding how to turn your
-                  professional network into referral generating machine.
+                  Once you know what you offer and who it will benefit, the next
+                  step is to start outreach to people who will benefit from your
+                  service. This combines reaching out to people directly as well
+                  as following up with your existing professional network. Most
+                  people already have a professional network that they can tap
+                  onto: your old colleagues, friends who work in similar
+                  industries, acquantainces that you;ve never followed up with.
+                  This week is about understanding how to turn your professional
+                  network into referral generating machine.
                 </p>
               </div>
               <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
@@ -341,12 +341,7 @@ function App() {
               </li>
             </ul>
             <div className="w-100 tc">
-              <Checkout
-                className="link dim br-pill ph4 pv3 mb2 dib white bg-red b mt5"
-                href="#0"
-              >
-                Get Access
-              </Checkout>
+              <Checkout1>Get Access</Checkout1>
             </div>
           </article>
         </div>
@@ -384,7 +379,7 @@ function App() {
               </li>
             </ul>
             <div className="w-100 tc">
-              <Checkout>Get Access</Checkout>
+              <Checkout2>Get Access</Checkout2>
             </div>
           </article>
         </div>
