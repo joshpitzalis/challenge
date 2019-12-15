@@ -1,18 +1,28 @@
 import React from 'react';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 
-const url = '//xxxx.us13.list-manage.com/subscribe/post?u=zefzefzef&id=fnfgn';
+const url = "https://joshpitzalis.us14.list-manage.com/subscribe/post?u=2c6088d1532d8f6a70091ef05&amp;id=26ce73aa8e" 
 
 export function Mailchimp() {
+
+
+const [email, setEmail] = React.useState('')
 
 		return <MailchimpSubscribe
 			url={url}
 			render={({ subscribe, status, message }) => (
-				<form class='measure center' onSubmit={(formData) => subscribe(formData)}>
+				<><form class='measure center' onSubmit={
+				(e) => {
+					e.preventDefault()
+					const formData = {
+						EMAIL: email,
+					}
+					subscribe(formData)
+					}}>
 					<fieldset id='sign_up' class='ba b--transparent ph0 mh0'>
 						<legend class='f4 fw6 ph0 mh0 dn'>Sign In</legend>
 
-						<label class='fw6 lh-copy f6 dn' for='email-address'>
+						<label class='fw6 lh-copy f6 dn' htmlfor='email-address'>
 							Email
 						</label>
 						<input
@@ -21,28 +31,30 @@ export function Mailchimp() {
 							name='email-address'
 							id='email-address'
 							placeholder='Your email address...'
+							value={email}
+							onChange={e => setEmail(e.target.value)}
 						/>
 
 						<input
-							className=' br--right-ns br3 link bn ph4 pv3 mb2 dib white bg-red b tracked w-100 w-25-ns'
+							className=' br--right-ns br3 link bn ph4 pv3 mb2 dib white bg-red b tracked w-100 w-25-ns pointer'
 							type='submit'
 							value='Join'
 						/>
 
-						{status === 'sending' && <small className='pa0 ma0 lh-copy pointer blue'>sending...</small>}
-						{status === 'error' && (
-							<div
-								style={{
-									color: 'red'
-								}}
-								dangerouslySetInnerHTML={{
-									__html: message
-								}}
-							/>
-						)}
-						{status === 'success' && <small className='pa0 ma0 lh-copy pointer green'>Subscribed !</small>}
+						
 					</fieldset>
 				</form>
+				{status === 'sending' && <small className='pa0 ma0 lh-copy pointer white'>sending...</small>}
+				{status === 'error' && (
+					<div
+						className='red'
+						dangerouslySetInnerHTML={{
+							__html: message
+						}}
+					/>
+				)}
+				{status === 'success' && <small className='pa0 ma0 lh-copy pointer green'>Subscribed !</small>}
+				</>
 			)}
 		/>
 
