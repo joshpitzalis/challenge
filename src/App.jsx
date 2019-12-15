@@ -10,6 +10,7 @@ import peeps12 from './images/teamwork_white_12.png';
 import peeps15 from './images/teamwork_white_15.png';
 import peeps14 from './images/teamwork_white_14.png';
 import Checkout from './checkout.js';
+
 function App() {
   return (
     <main>
@@ -340,12 +341,12 @@ function App() {
               </li>
             </ul>
             <div className="w-100 tc">
-              <a
+              <Checkout
                 className="link dim br-pill ph4 pv3 mb2 dib white bg-red b mt5"
                 href="#0"
               >
                 Get Access
-              </a>
+              </Checkout>
             </div>
           </article>
         </div>
@@ -383,17 +384,7 @@ function App() {
               </li>
             </ul>
             <div className="w-100 tc">
-              <Checkout
-                amount="500"
-                billingAddress
-                description="Awesome Product"
-                image="https://yourdomain.tld/images/logo.svg"
-                locale="auto"
-                name="YourDomain.tld"
-                href="#0"
-              >
-                Get Access
-              </Checkout>
+              <Checkout>Get Access</Checkout>
             </div>
           </article>
         </div>

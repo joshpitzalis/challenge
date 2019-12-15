@@ -1,35 +1,33 @@
 import React from 'react';
-import StripeCheckout from 'react-stripe-checkout';
 
-export default class Checkout extends React.Component {
-  onToken = token => {
-    fetch('/save-stripe-token', {
-      method: 'POST',
-      body: JSON.stringify(token)
-    }).then(response => {
-      response.json().then(data => {
-        alert(`We are in business, ${data.email}`);
-      });
+const Checkout = class extends React.Component {
+  // Initialise Stripe.js with your publishable key.
+  // You can find your key in the Dashboard:
+  // https://dashboard.stripe.com/account/apikeys
+  componentDidMount() {
+    this.stripe = window.Stripe('pk_test_UEtlVFtmDH1SIsFR5HMOR6tD');
+  }
+
+  async redirectToCheckout(event, sku) {
+    event.preventDefault();
+    const { error } = await this.stripe.redirectToCheckout({
+      items: [{ sku: 'sku_GJaCbyLyFKVcuL', quantity: 1 }],
+      successUrl: `http://localhost:8000/page-2/`,
+      cancelUrl: `http://localhost:8000/`
     });
-  };
 
-  // ...
+    if (error) {
+      console.warn('Error:', error);
+    }
+  }
 
   render() {
     return (
-      // ...
-      <StripeCheckout
-        token={this.onToken}
-        stripeKey="pk_test_UEtlVFtmDH1SIsFR5HMOR6tD"
-        id="checkout-button-sku_GJaCbyLyFKVcuL"
-        amount="500"
-        billingAddress
-        description="Awesome Product"
-        image="https://yourdomain.tld/images/logo.svg"
-        locale="auto"
-        name="freelancefish.com"
-        href="#0"
-      />
+      <button onClick={event => this.redirectToCheckout(event)}>
+        Get Access
+      </button>
     );
   }
-}
+};
+
+export default Checkout;
