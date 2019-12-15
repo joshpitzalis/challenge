@@ -229,10 +229,10 @@ function App() {
         <blockquote class="ph0 f4 f1-ns measure-narrow center fw9 lh-copy lh-title-ns tc blue">
           Who is The Field Guide for ?
         </blockquote>
-        <div className="w-100 w-50-ns pa4 db dib-ns">
+        <div className="w-100 w-50-ns pa4 db dib-ns tc">
           <img
             src={peeps15}
-            className="dib w-100 h-auto pt4"
+            className="dib w-75-ns w-100  h-auto"
             alt="peeps working together"
           />
         </div>
@@ -302,7 +302,7 @@ function App() {
 
       <section className="w-100">
         <blockquote class="ph0 f4 f1-ns measure-narrow center">
-          <p class="fw9 lh-copy lh-title-ns tc">Pricing</p>
+          <p className="fw9 lh-copy lh-title-ns tc" id='pricing'>Pricing</p>
         </blockquote>
 
         <h4 class="f3 fw1 georgia i mb5 measure center tc">
