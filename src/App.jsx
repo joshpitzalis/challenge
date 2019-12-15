@@ -364,10 +364,10 @@ function App() {
               </li>
 
               <li class="lh-copy measure center f6 black-70">
-                Free access to clienttree app for 3 months (Valued at 150$)
+                Free access to clienttree app for 3 months (Valued at $150)
               </li>
               <li class="lh-copy measure center f6 black-70">
-                Weekly 1 on 1's (Valued at 400$)
+                Weekly 1 on 1's (Valued at $400)
               </li>
 
               <li class="lh-copy measure center f6 black-70">
