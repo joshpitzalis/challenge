@@ -389,7 +389,7 @@ function App() {
         <article className="w-100 bg-blue mv4">
           <div className="w-75-ns tc white pa5-ns pa3 center">
             <blockquote class="ph0 f4 f1-ns measure-narrow center fw9 lh-copy lh-title-ns tc white">
-              100% Money-back guarantee
+              100% Money-back Guarantee
             </blockquote>
 
             <blockquote class="athelas ml0 mt0 pl4 black-90 bw2 white ">
@@ -397,7 +397,7 @@ function App() {
                 If you don’t land a new client within 30 days of the course
                 ending, we will give you 100% of your money back. You must
                 complete all the exercises and spend a minimum of 5 hours a week
-                following teh programme. If you do this and you don't get at
+                following the programme. If you do this and you don't get at
                 least one client booked after a month of completing the
                 programme then we will give you 100% of your money back.
               </p>

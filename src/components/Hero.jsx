@@ -14,7 +14,8 @@ export function Hero() {
 				<div id='slantLeft' className='bg-blue pa3 pv6'>
 					<div className='measure center tl pl4-ns'>
 						<h1 className='f2 lh-title fw9 '>
-							Become a Professional Freelancer and find your next project in 1 Month.
+							
+							Find your next project as a professional freelancer in 1 Month.
 						</h1>
 						<h2 className='f4 fw6  lh-title '>
 							A free 4 week programme designed to help people set up a professional freelancing
