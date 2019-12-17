@@ -417,7 +417,7 @@ function App() {
         <article className="w-100 bg-blue mv4">
           <div className="w-75-ns tc white pa5-ns pa3 center">
             <blockquote class="ph0 f4 f1-ns measure-narrow center fw9 lh-copy lh-title-ns tc white">
-              100% Money-back guarantee
+              100% Money-back Guarantee
             </blockquote>
 
             <blockquote class="athelas ml0 mt0 pl4 black-90 bw2 white ">
