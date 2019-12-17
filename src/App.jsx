@@ -19,10 +19,9 @@ function App() {
       <Hero />
       <section class="blue pa4">
         <blockquote class="ph1 f6 f2-ns b measure center">
-          The Freelance Field Guide is for anyone who wants help setting up a
-          professional freelance practice. We show you how to take control of
-          your freelancing career and start building your own list of
-          well-paying clients in 30 days.
+          The Freelance Field Guide will show you how to take control of your
+          freelancing career and start building your own list of well-paying
+          clients in 30 days.
         </blockquote>
         <p class="f6 f4-ns lh-copy measure center mt5-ns">
           Have you been meaning to start your freelancing business for a while
@@ -33,16 +32,16 @@ function App() {
             website together, find clients, draft proposals, sell your services,
             onboarding new clients, establish clear milestones and deadline, get
             testimonials, and handle all the accounting stuff, then you should
-            think about signing up to our course.
+            sign up to our course.
           </p>
           <p class="f6 f4-ns lh-copy measure center">
-            Freelancing is about more than just being good at what you do.You
+            Freelancing is about more than just being good at what you do. You
             have to run a business while you do what you do. Without an
             understanding of some basic principles, you're going to make a lot
             of easily avoidable to mistakes.
           </p>
           <p class="f6 f4-ns lh-copy measure center">
-            Our program is thoughtfully designed to help you avoid all the
+            Our programme is thoughtfully designed to help you avoid all the
             common mistakes most freelancers make when they start out.
           </p>
         </p>
@@ -95,7 +94,7 @@ function App() {
             </p>
             <ul className="tl">
               <li class="fw4 f4 lh-copy mt0 mb3">
-                <b>Build a simple website</b>
+                <b>Build a professional website </b>
               </li>
 
               <li class="fw4 f4 lh-copy mt0 mb3">
@@ -146,8 +145,8 @@ function App() {
             </h1>
           </h3>
           <h4 class="f3 fw1 georgia i mb5">
-            The program is structured into four modules. Each week focuses on a
-            different module and gets you thinking about important aspects of
+            The programme is structured into four modules. Each week focuses on
+            a different module and gets you thinking about important aspects of
             your freelance business. There is a clear goal for the end of each
             week and exercises and worksheets to help you get there.
           </h4>
@@ -260,12 +259,18 @@ function App() {
                 get your business in shape and need some help you get there.
               </li>
             </ul>
+            <p className="fw4 f3 lh-copy mt0 mb3">
+              This programme is not for you if:
+            </p>
+            <ul className="fw4 f3 lh-copy mt0 mb3 measure-narrow">
+              <li>You don't have much experience in your primarily skillset</li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section class="mw8 center ph3 ph5-ns tc br2 pv5 bg-yellow blue mv5 ">
-        <h3 class="fw6 f3 f2-ns lh-title mt0 mb4">The program includes:</h3>
+        <h3 class="fw6 f3 f2-ns lh-title mt0 mb4">The programme includes:</h3>
         <ul className="tl">
           <li class="fw4 f4 lh-copy mt0 mb3">
             <b>4 focused weekly modules </b>
@@ -276,7 +281,7 @@ function App() {
           <li class="fw4 f4 lh-copy mt0 mb3">
             <b>
               Access to a custom software platform to keep track of your
-              progress for the duration of the program.
+              progress for the duration of the programme.
             </b>
           </li>
           <li class="fw4 f4 lh-copy mt0 mb3">
@@ -288,7 +293,7 @@ function App() {
           </li>
           <li class="fw4 f4 lh-copy mt0 mb3">
             <b>Custom reports based on your progress through each module.</b>
-            You’ll finish the program with a report showing you exactly where
+            You’ll finish the programme with a report showing you exactly where
             you stand and how your freelancing business can continue to improve.
           </li>
           <li class="fw4 f4 lh-copy mt0 mb3">
@@ -302,7 +307,9 @@ function App() {
 
       <section className="w-100">
         <blockquote class="ph0 f4 f1-ns measure-narrow center">
-          <p className="fw9 lh-copy lh-title-ns tc" id='pricing'>Pricing</p>
+          <p className="fw9 lh-copy lh-title-ns tc" id="pricing">
+            Pricing
+          </p>
         </blockquote>
 
         <h4 class="f3 fw1 georgia i mb5 measure center tc">
@@ -319,6 +326,7 @@ function App() {
             <div class="tc pb5">
               <dl class="db dib-l w-auto-l lh-title">
                 <dd class="f2 f-subheadline-l fw6 ml0">$99</dd>
+
                 {/* <dd class='f6 fw4 ml0 '></dd> */}
               </dl>
               <h1 class="f4">Platform & Worksheets</h1>
@@ -328,16 +336,25 @@ function App() {
               <li class="lh-copy measure center f6 black-70">
                 All 4 in-depth learning modules
               </li>
-              <li class="lh-copy measure center f6 black-70">
-                Lifetime access to the private slack community
-              </li>
 
               <li class="lh-copy measure center f6 black-70">
                 $100 for 1 on 1's on demand{' '}
               </li>
 
               <li class="lh-copy measure center f6 black-70">
-                Ready-To-Go Templates and Documents
+                Priority email support
+              </li>
+              <li class="lh-copy measure center f6 black-70">
+                Get a professional services page
+              </li>
+              <li class="lh-copy measure center f6 black-70">
+                Manage your professional network{' '}
+              </li>
+              <li class="lh-copy measure center f6 black-70">
+                Take a client from referral to invoice seamlessly on our app
+              </li>
+              <li class="lh-copy measure center f6 black-70">
+                60 day moneyback guarantee
               </li>
             </ul>
             <div className="w-100 tc">
@@ -359,9 +376,6 @@ function App() {
               <li class="lh-copy measure center f6 black-70">
                 All 4 in-depth learning modules
               </li>
-              <li class="lh-copy measure center f6 black-70">
-                Lifetime access to the clienttree private community on slack
-              </li>
 
               <li class="lh-copy measure center f6 black-70">
                 Free access to clienttree app for 3 months (Valued at $150)
@@ -376,6 +390,20 @@ function App() {
 
               <li class="lh-copy measure center f6 black-70">
                 Lifetime access to knowledgebase{' '}
+              </li>
+
+              <li class="lh-copy measure center f6 black-70">
+                Get a professional services page
+              </li>
+              <li class="lh-copy measure center f6 black-70">
+                Manage your professional network{' '}
+              </li>
+              <li class="lh-copy measure center f6 black-70">
+                {' '}
+                Take a client from referral to invoice seamlessly on our app{' '}
+              </li>
+              <li class="lh-copy measure center f6 black-70">
+                60 day moneyback guarantee
               </li>
             </ul>
             <div className="w-100 tc">
@@ -394,12 +422,10 @@ function App() {
 
             <blockquote class="athelas ml0 mt0 pl4 black-90 bw2 white ">
               <p class="f5 f4-m f3-l lh-copy measure mt0 center georgia">
-                If you don’t land a new client within 30 days of the course
-                ending, we will give you 100% of your money back. You must
-                complete all the exercises and spend a minimum of 5 hours a week
-                following teh programme. If you do this and you don't get at
-                least one client booked after a month of completing the
-                programme then we will give you 100% of your money back.
+                If you complete all the exercises and spend a minimum of 5 hours
+                a week following the programme with coaching and don't land a
+                new client within 30 days of the course ending, we will give you
+                100% of your money back.
               </p>
               <div></div>
               <cite class="f6 ttu tracked fs-normal"></cite>
